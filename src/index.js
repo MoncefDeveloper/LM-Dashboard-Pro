@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import DashboardContext from './context/context';
 
 ReactDOM.render(
+  
   <React.StrictMode>
-    <App />
+    <DashboardContext>
+      <App />
+    </DashboardContext>
   </React.StrictMode>,
   document.getElementById('root')
 );

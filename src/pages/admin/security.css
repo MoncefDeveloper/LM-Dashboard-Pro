@@ -1,0 +1,248 @@
+.container .security{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: .5s;
+  font-size: 1.2vw;
+  position: relative;
+  padding: 30px;  
+  color: #272864;
+
+}
+
+.testtesttes1{
+  background: linear-gradient(45deg,  #F4FAFF,#d3dff0, #becbdd,#8394a7,#63748b,#435265 );
+  background: linear-gradient(45deg,  #ffb6d9,#CA8EAC,#AB82A5,#8D779A,#706B8B);
+  background: linear-gradient(45deg,  #00BAAC,#429089,#185A51,#724354, #E09F1F, #F9F871);
+}
+
+.container .security .title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0 0 50px;
+  width: 100%;
+  font-size: 3.5vw;
+}
+.container .security .title .logo{
+  margin-right: 10px;
+  font-size: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .security .update-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+.container .security .update-box .left{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #FAF8FF;
+  overflow: hidden;
+  height: max-content;
+}
+.container .security .update-box .left .ft-title{
+  width: 100%;
+  padding:  20px;
+  color: #ffb6d9;
+  border-bottom: 2px solid #F4FAFF ;
+  font-weight: 400;
+  background-color: #63748b85;
+
+}
+.container .security .update-box .left .ft-picture{
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .security .update-box .left .ft-picture .img {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+.container .security .update-box .left .ft-picture .img img{
+  height: 10vw;
+  object-fit: cover;
+}
+.container .security .update-box .left .ft-picture .role{
+  margin:20px 30px ;
+  text-align: center;
+}
+.container .security .update-box .left .ft-picture .btn-prem{
+  margin: 10px 0;
+}
+.container .security .update-box .left .ft-picture .btn-prem .form input{
+  display: none;
+}
+.container .security .update-box .right{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #FAF8FF;
+  overflow: hidden;
+  margin-right:30px ;
+}
+.container .security .update-box .right .ft-title{
+  width: 100%;
+  padding:  20px;
+  color: #ffb6d9;
+  border-bottom: 2px solid #F4FAFF ;
+  font-weight: 400;
+  background-color: #63748b85;
+}
+.container .security .update-box .right .account-details{
+  padding: 30px;
+}
+.container .security .update-box .right .account-details .error-box{
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #FAF8FF;
+  color: #FF7171;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  display: none;
+}
+.container .security .update-box .right .account-details .error-box-hidden{
+  display: flex;
+}
+.container .security .update-box .right .account-details .error-box-correct{
+  background-color: #e3f5e3e4;
+  color: #10b428;
+}
+
+.container .security .update-box .right .account-details .input-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 20px ;
+}
+.container .security .update-box .right .account-details .input-box .input-title{
+  margin: 10px 0;
+  font-size: 2vw;
+}
+.container .security .update-box .right .account-details .input-box input{
+  width: 100%;
+  font-size: 1.2vw;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: solid #27286450;
+  background-color: #FAF8FF;
+  transition: .3s;
+  color: #272864;
+}
+.container .security .update-box .right .account-details .input-box input::placeholder{
+  color: #27286482;
+}
+.container .security .update-box .right .account-details .input-box input:focus{ 
+  outline: none;
+  box-shadow: 0 0 0 7px #9A91D969;
+  border: solid transparent;
+}
+
+.container .security .update-box .right .account-details .btn-prem{
+  margin-top: 30px;
+  padding: .8vw 2.5vw;
+}
+
+.container .security .msg-conf{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #63748bf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+}
+.container .security .msg-conf-show{
+  display: flex;
+}
+.container .security .msg-conf .error-box2{
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #f5e3e7e4;
+  color: #e81500;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  justify-content: center;
+  font-weight: 500;
+  display: none;
+}
+.container .security .msg-conf .error-box2-hidden{
+  display: flex;
+}
+.container .security .msg-conf form{
+  width: 50%;
+  height: 40%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5%;
+  background:linear-gradient(135deg, #bd5368,#bd536883 ) ;
+  box-shadow: 0 10px 30px rgba(34, 34, 34, 0.255);
+}
+.container .security .msg-conf form .input-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px ;
+  position: relative;
+}
+.container .security .msg-conf form .input-box .input-title{
+  margin: 10px 0;
+}
+.container .security .msg-conf form .input-box input{
+  width: 100%;
+  font-size: 1.2vw;
+  padding: 15px 20px ;
+  border-radius: 4px;
+  border: none;
+  background-color: #FFF;
+  transition: .3s;
+  color: #666;
+}
+.container .security .msg-conf form .input-box input:focus{ 
+  outline: none;
+  box-shadow: 0 0 0 7px #F4FAFA5b;
+}
+.container .security .update-box .right .account-details .input-box .icon,
+.container .security .msg-conf form .input-box .icon{
+  font-size: 1.5vw;
+  color: #435265;
+  position: absolute;
+  inset: 0;
+  left: 100%;
+  margin-left: -3.5vw;
+  top: 66%;
+  display: flex;
+  width: min-content;
+  height: min-content;
+  justify-content: center;
+  align-items: center;
+}
+.container .security .msg-conf form .input-box .icon{
+  top: 30%;
+}
+.container .security .msg-conf form .btn-denger{
+  margin: 0;
+  margin-top: 20px;
+}

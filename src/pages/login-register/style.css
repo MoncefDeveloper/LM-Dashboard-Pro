@@ -1,0 +1,508 @@
+.container .login {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  background-color: #e2ccfe;
+  color: #F4FAFF;
+  padding: 10%;
+}
+
+.container .login .content {
+  display: flex;
+  width: 65%;
+  flex-wrap: nowrap;
+  background-color: #514C8D;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 30px rgba(51, 51, 51, 0.308);
+
+}
+
+.container .login .content .left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .login .content .left .img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .login .content .left .img img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.container .login .content .right {
+  width: 60%;
+}
+
+.container .login .content .right form .error-box {
+  width: 100%;
+  background-color: #f5e3e7e4;
+  color: #e81500;
+  padding: 9px 10px;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.container .login .content .right form {
+  width: 100%;
+  padding: 70px;
+  font-size: 1.2vw;
+  display: flex;
+  flex-direction: column;
+  border-left: #F4FAFF 2px solid;
+}
+
+.container .login .content .right form .title {
+  font-size: 1.5vw;
+  margin-bottom: 20px;
+}
+
+.container .login .content .right form input {
+  padding: 10px 20px;
+  border: 2px solid #F4FAFF;
+  background-color: transparent;
+  outline: none;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #F4FAFF;
+}
+
+.container .login .content .right form input:focus {
+  outline: none;
+}
+
+.container .login .content .right form input::placeholder {
+  color: #f4faff63;
+}
+
+.container .login .content .right form .foot {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0
+}
+
+.container .login .content .right form .foot .f-psw {
+  font-size: .8vw;
+  cursor: pointer;
+  height: max-content;
+  color: #a8d3f7;
+  transition: .3s;
+}
+
+.container .login .content .right form .foot .f-psw:hover {
+  color: #F4FAFF;
+}
+
+.container .login .content .right form .foot .btn-prem {
+  background: #FAF8FF;
+  color: #272864;
+  font-size: 1vw;
+  margin-top: 20px;
+  border: solid transparent 2px;
+}
+
+.container .login .content .right form .btn-prem:hover {
+  color: #F4FAFF;
+  background: #272864;
+  background-color: transparent;
+  border: solid 2px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+.container .unauthorized {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #e2ccfe;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+  flex-direction: column;
+  position: relative;
+}
+
+.container .background {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container .unauthorized .background .top-left,
+.container .unauthorized .background .top-right,
+.container .unauthorized .background .bottom-left,
+.container .unauthorized .background .bottom-right {
+  width: 50%;
+  height: 50%;
+}
+
+.container .top-left {
+  background: #514C8D;
+}
+
+.container .top-right {
+  background: #7A73B8;
+}
+
+.container .bottom-left {
+  background: #A69CE6;
+
+}
+
+.container .bottom-right {
+  background: #FAF8FF;
+
+}
+
+.below-door {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(#8782FEee, #FAF8FFee);
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(.85); */
+  width: 100%;
+  order: 1;
+  height: 26vw;
+}
+
+.below-door .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  order: 2;
+  color: #272864;
+}
+
+.container2 img {
+  height: 140%;
+}
+
+.message1 {
+  font-size: 14vw;
+  font-weight: bolder;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* margin: -70px; */
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: .3;
+  text-align: center;
+}
+
+.message {
+  font-size: 3vw;
+  font-weight: 500;
+  z-index: 1;
+  /* color: ; */
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.message2 {
+  font-size: 1.3vw;
+  font-weight: 300;
+  width: 60%;
+  z-index: 1;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.below-door .btn-prem {
+  text-transform: uppercase;
+  padding: 1vw;
+
+}
+
+
+.neon {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 90px;
+  color: #CA8EAC;
+  letter-spacing: 3px;
+  text-shadow: 0 0 5px #CA8EAC;
+  animation: flux 2s linear infinite;
+
+}
+
+.trash {
+  width: 170px;
+  height: 220px;
+  background-color: #585F67;
+  top: 300px;
+}
+
+.can {
+  width: 190px;
+  height: 30px;
+  background-color: #6B737C;
+  border-radius: 15px 15px 0 0;
+}
+
+.door-frame {
+  height: 495px;
+  width: 295px;
+  border-radius: 90px 90px 0 0;
+  background-color: #8594A5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.door {
+  height: 450px;
+  width: 250px;
+  border-radius: 70px 70px 0 0;
+  background-color: #A0AEC0;
+}
+
+.eye {
+  top: 15px;
+  left: 25px;
+  height: 5px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  animation: eye 7s ease-in-out infinite;
+  position: absolute;
+}
+
+.eye2 {
+  left: 65px;
+}
+
+.window {
+  height: 40px;
+  width: 130px;
+  background-color: #1C2127;
+  border-radius: 3px;
+  margin: 80px auto;
+  position: relative;
+}
+
+.leaf {
+  height: 40px;
+  width: 130px;
+  background-color: #8594A5;
+  border-radius: 3px;
+  margin: 80px auto;
+  animation: leaf 7s infinite;
+  transform-origin: right;
+}
+
+.handle {
+  height: 8px;
+  width: 50px;
+  border-radius: 4px;
+  background-color: #EBF3FC;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 30px;
+}
+
+.rectangle {
+  height: 70px;
+  width: 25px;
+  background-color: #CBD8E6;
+  border-radius: 4px;
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 20px;
+}
+
+@keyframes leaf {
+  0% {
+    transform: scaleX(1);
+  }
+
+  5% {
+    transform: scaleX(0.2);
+  }
+
+  70% {
+    transform: scaleX(0.2);
+  }
+
+  75% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes eye {
+  0% {
+    opacity: 0;
+    transform: translateX(0)
+  }
+
+  5% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+
+  20% {
+    transform: translateX(15px)
+  }
+
+  35% {
+    transform: translateX(15px)
+  }
+
+  40% {
+    transform: translateX(-15px)
+  }
+
+  60% {
+    transform: translateX(-15px)
+  }
+
+  65% {
+    transform: translateX(0)
+  }
+}
+
+@keyframes flux {
+
+  0%,
+  100% {
+    text-shadow: 0 0 5px #ffb6d9, 0 0 15px #ffb6d9, 0 0 50px #ffb6d9, 0 0 50px #ffb6d9, 0 0 2px #ecd5e0, 2px 2px 3px #CA8EAC;
+    color: #ff007b34;
+  }
+
+  50% {
+    text-shadow: 0 0 3px #CA8EAC, 0 0 7px #CA8EAC, 0 0 25px #CA8EAC, 0 0 25px #CA8EAC, 0 0 2px #CA8EAC, 2px 2px 3px #AB82A5;
+    color: #ffb6d9;
+  }
+}
+
+@media (max-width:550px) {
+  .below-door {
+    padding: 10px;
+  }
+
+  .container .login .content .right form input {
+    background-color: #0000003d;
+  }
+
+  .container .login .content .right form input::placeholder {}
+
+  .container2 img {
+    height: 300%;
+  }
+
+  .message2 {
+    font-size: 3.5vw;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .below-door .btn-prem {
+    padding: 2vw 3vw;
+  }
+
+  .container .login {
+    padding: 40px;
+  }
+
+  .container .login .content {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+
+  .container .login .content .right {
+    width: 100%;
+    z-index: 2;
+
+  }
+
+  .container .login .content .right form {
+    border: none;
+    padding: 40px;
+  }
+
+  .container .login .content .left {
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    position: absolute;
+    background-color: #1C212755;
+  }
+
+  .container .login .content .right form .title {
+    font-size: 5vw;
+  }
+
+  .container .login .content .right form .foot .btn-prem {
+    font-size: 3vw;
+    padding: 2vw 3vw;
+
+  }
+
+  .container .login .content .right form .foot .f-psw {
+    color: #ff0000;
+    font-size: 2vw;
+  }
+}
